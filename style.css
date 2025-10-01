@@ -1,0 +1,116 @@
+:root {
+    --ease-soft: cubic-bezier(.22, .61, .36, 1);
+}
+
+/* fondo suave con halos */
+body {
+    background:
+        radial-gradient(1000px 500px at 100% -10%, rgba(120, 120, 255, .06), transparent 60%),
+        radial-gradient(900px 500px at -10% 110%, rgba(255, 120, 120, .06), transparent 60%);
+}
+
+/* hero */
+.hero .hero-frame {
+    backdrop-filter: blur(4px);
+    border: 1px solid color-mix(in oklab, currentColor 12%, transparent);
+}
+
+/* texto con gradiente */
+.gradient-text {
+    background: linear-gradient(90deg, #7c4dff, #00bcd4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* animaciones */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .6s var(--ease-soft), transform .6s var(--ease-soft);
+}
+
+.fade-in-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 {
+    transition-delay: .1s;
+}
+
+.delay-2 {
+    transition-delay: .2s;
+}
+
+.delay-3 {
+    transition-delay: .3s;
+}
+
+.delay-4 {
+    transition-delay: .4s;
+}
+
+/* cards */
+.card-service {
+    border: 1px solid color-mix(in oklab, currentColor 12%, transparent);
+    transition: transform .25s var(--ease-soft), box-shadow .25s var(--ease-soft);
+}
+
+.card-service:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+}
+
+.card-service .icon-wrap {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: rgba(124, 77, 255, .12);
+    color: #7c4dff;
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
+}
+
+/* grid de proyectos */
+.card-work {
+    border: 1px solid color-mix(in oklab, currentColor 12%, transparent);
+    overflow: hidden;
+    transition: transform .25s var(--ease-soft), box-shadow .25s var(--ease-soft);
+}
+
+.card-work:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+}
+
+.card-work .ratio>img {
+    transition: transform .6s var(--ease-soft);
+}
+
+.card-work:hover .ratio>img {
+    transform: scale(1.04);
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.object-fit-contain {
+    object-fit: contain;
+}
+
+/* CTA */
+.cta {
+    background:
+        linear-gradient(180deg, rgba(124, 77, 255, .08), rgba(0, 0, 0, 0));
+}
+
+/* buscador móvil */
+@media (max-width: 576px) {
+    #searchInput {
+        width: 100%;
+    }
+}
