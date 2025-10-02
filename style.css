@@ -17,7 +17,8 @@ body {
 
 /* texto con gradiente */
 .gradient-text {
-    background: linear-gradient(90deg, #7c4dff, #00bcd4);
+    /* background: linear-gradient(90deg, #7c4dff, #00bcd4); */
+    background: linear-gradient( 50deg, #00bcd4, #8A0BA1); 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -113,4 +114,8 @@ body {
     #searchInput {
         width: 100%;
     }
+}
+
+.color{
+    color: #fff!important;
 }

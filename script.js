@@ -6,85 +6,75 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 const WORKS = [
   {
     id: "w1",
-    title: "Identidad · Café Origen",
+    title: "Dias de las madres - ChocoBreak",
     role: "Branding",
     year: 2025,
-    tags: ["branding", "packaging"],
+    tags: ["Marketing", "Packaging"],
     category: "branding",
-    thumb:
-      "https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=1200&auto=format&fit=crop",
-    image:
-      "https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=1600&auto=format&fit=crop",
+    thumb: "img/projects/madres3.webp",
+    image: "img/projects/madres2.webp",
     desc: "Sistema visual cálido con tipografía humanista y paleta tostada. Packaging modular.",
     link: "https://www.behance.net/",
   },
   {
     id: "w2",
-    title: "Ilustración · Ruta Botánica",
+    title: "Temporada · Navidad",
     role: "Ilustración",
-    year: 2024,
-    tags: ["ilustracion", "editorial"],
+    year: 2025,
+    tags: ["Marketing", "Ilustracion"],
     category: "ilustracion",
-    thumb:
-      "https://images.unsplash.com/photo-1526312426976-593c128eea49?q=80&w=1200&auto=format&fit=crop",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop",
+    thumb: "img/projects/navidad1.webp",
+    image: "img/projects/navidad3.webp",
     desc: "Serie de ilustraciones botánicas para publicación impresa y social media.",
     link: "https://www.instagram.com/",
   },
-  {
-    id: "w3",
-    title: "Editorial · Revista Lumen",
-    role: "Editorial",
-    year: 2025,
-    tags: ["editorial", "reticula"],
-    category: "editorial",
-    thumb:
-      "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?q=80&w=1200&auto=format&fit=crop",
-    image:
-      "https://images.unsplash.com/photo-1491841651911-c44c30c34548?q=80&w=1600&auto=format&fit=crop",
-    desc: "Retícula modular y tipografía serif para lectura larga con acentos de color.",
-    link: "https://dribbble.com/",
-  },
+  // {
+  //   id: "w3",
+  //   title: " · Revista Lumen",
+  //   role: "Editorial",
+  //   year: 2025,
+  //   tags: ["editorial", "reticula"],
+  //   category: "editorial",
+  //   thumb:
+  //     "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?q=80&w=1200&auto=format&fit=crop",
+  //   image:
+  //     "https://images.unsplash.com/photo-1491841651911-c44c30c34548?q=80&w=1600&auto=format&fit=crop",
+  //   desc: "Retícula modular y tipografía serif para lectura larga con acentos de color.",
+  //   link: "https://dribbble.com/",
+  // },
   {
     id: "w4",
-    title: "UI · App Agenda Creativa",
+    title: "Tattoo - Izabella",
     role: "UI",
-    year: 2024,
+    year: 2025,
     tags: ["ui", "figma"],
     category: "ui",
-    thumb:
-      "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=1200&auto=format&fit=crop",
-    image:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop",
+    thumb: "img/projects/tatoo1.webp",
+    image: "img/projects/tatoo2.webp",
     desc: "Componentes atómicos, grid de 8px y estilo minimal para productividad.",
-    link: "https://www.figma.com/",
+    link: "https://www.instagram.com/izaatatto?igsh=M243ZGhibGVxZ3I0",
   },
   {
     id: "w5",
-    title: "Branding · Panadería Norte",
+    title: "Menu ·Sabor en las alturas ",
     role: "Branding",
-    year: 2023,
-    tags: ["branding", "logo"],
+    year: 2025,
+    tags: ["Marketing", "Branding"],
     category: "branding",
-    thumb:
-      "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=1200&auto=format&fit=crop",
-    image:
-      "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=1600&auto=format&fit=crop",
+    thumb: "img/projects/menu h.webp",
+    image: "img/projects/menu p.webp",
     desc: "Identidad artesanal con lettering e íconos de granos, tono cercano y cálido.",
-    link: "https://www.behance.net/",
+    link: "https://www.instagram.com/saborenlasalturas_?utm_source=ig_web_button_share_sheet&igsh=MTJobXJscXJrd2ExZg==",
   },
   {
     id: "w6",
-    title: "Ilustración · Mapas Urbanos",
+    title: "Perfumen · Versace",
     role: "Ilustración",
     year: 2025,
-    tags: ["ilustracion", "poster"],
+    tags: ["ilustracion", "Branding"],
     category: "ilustracion",
-    thumb:
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200&auto=format&fit=crop",
-    image:
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1600&auto=format&fit=crop",
+    thumb: "img/projects/perfumen1.webp",
+    image: "img/projects/perfumen2.webp",
     desc: "Serie de pósters con trazos vectoriales y paleta vibrante.",
     link: "https://www.instagram.com/",
   },
@@ -93,7 +83,7 @@ const WORKS = [
 /* ===== Init ===== */
 document.addEventListener("DOMContentLoaded", () => {
   $("#year").textContent = new Date().getFullYear();
-  $("#btnTheme").addEventListener("click", toggleTheme);
+  // $("#btnTheme").addEventListener("click", toggleTheme);
   $("#filterSelect").addEventListener("change", renderGrid);
   $("#searchInput").addEventListener("input", renderGrid);
   renderGrid();
@@ -101,11 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ===== Tema claro/oscuro ===== */
-function toggleTheme() {
-  const html = document.documentElement;
-  const current = html.getAttribute("data-bs-theme") || "light";
-  html.setAttribute("data-bs-theme", current === "dark" ? "light" : "dark");
-}
+// function toggleTheme() {
+//   const html = document.documentElement;
+//   const current = html.getAttribute("data-bs-theme") === "dark";
+//   html.setAttribute("data-bs-theme", current === "dark");
+// }
 
 /* ===== Render grid ===== */
 function renderGrid() {
